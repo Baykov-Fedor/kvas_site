@@ -94,6 +94,10 @@ body {
     .container-builder (1015px);
 }
 
+.container-2-promo {
+    .container-builder (60vw);
+}
+
 .header {
     background: url(../img/header-back.jpg) no-repeat bottom;
     background-size: cover;
@@ -239,7 +243,6 @@ body {
     text-align: left;
     h2 {
        margin: 0;
-       padding-top: 100px; 
        margin-bottom: 30px;
     }
     p {
@@ -247,12 +250,11 @@ body {
         line-height: 30px;
     }
     &::before {
+        display: block;
         width: 65px;
-        height: 60px;
-        position: absolute;
+        height: 70px;
         content: "";
-        top: 0;
-        left: 0;
+        margin-bottom: 20px;
     }   
 }
 
@@ -563,3 +565,37 @@ sup {
         color: @footer-color;
     }
 }
+
+@media (max-width: 1100px) and (min-width: 768px) {
+    .container-2-promo {
+        .container-builder (90vw);
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-container {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .promo-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 1px solid @brown;
+        p {
+            margin-bottom: 30px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: 0px;
+            p {
+                margin-bottom: 0; 
+            }
+        }
+        &::before {
+            margin-left: auto;
+            margin-right: auto;
+        }   
+    }
+}
+
