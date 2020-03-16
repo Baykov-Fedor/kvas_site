@@ -70,6 +70,12 @@ body {
   padding-top: 60px;
   padding-bottom: 0;
 }
+@media (max-width: 768px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+}
 .nav-header img {
   float: left;
 }
@@ -114,6 +120,12 @@ body {
   padding-top: 90px;
   padding-bottom: 110px;
 }
+@media (max-width: 768px) {
+  .special-offer {
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
+}
 .special-offer-header {
   margin: 0;
   padding: 0;
@@ -121,6 +133,12 @@ body {
   text-transform: uppercase;
   text-align: left;
   padding-bottom: 90px;
+}
+@media (max-width: 768px) {
+  .special-offer-header {
+    text-align: center;
+    padding-bottom: 45px;
+  }
 }
 .special-offer-container {
   display: flex;
@@ -138,6 +156,12 @@ body {
   text-transform: uppercase;
   text-align: left;
   padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .special-offer-item h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
 .special-offer-item-middle-section {
   position: relative;
@@ -227,6 +251,12 @@ body {
   padding-top: 85px;
   padding-bottom: 85px;
 }
+@media (max-width: 768px) {
+  .history {
+    padding-top: 42.5px;
+    padding-bottom: 42.5px;
+  }
+}
 .hisory-header {
   margin: 0;
   padding: 0;
@@ -234,6 +264,12 @@ body {
   text-transform: uppercase;
   text-align: left;
   padding-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .hisory-header {
+    text-align: center;
+    padding-bottom: 30px;
+  }
 }
 .history-dl {
   text-align: left;
@@ -255,6 +291,10 @@ body {
 }
 .history-dl dd {
   margin: 0;
+  margin-bottom: 70px;
+}
+.history-dl dd:last-of-type {
+  margin-bottom: 0;
 }
 .history-dl dd img {
   float: right;
@@ -264,12 +304,17 @@ body {
   width: 490px;
   margin: 0;
   line-height: 30px;
-  margin-bottom: 70px;
 }
 .about-us {
   padding-top: 90px;
   padding-bottom: 90px;
   background-color: #ede5d8;
+}
+@media (max-width: 768px) {
+  .about-us {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 }
 .about-us-header {
   margin: 0;
@@ -278,6 +323,12 @@ body {
   text-transform: uppercase;
   text-align: left;
   padding-bottom: 90px;
+}
+@media (max-width: 768px) {
+  .about-us-header {
+    text-align: center;
+    padding-bottom: 45px;
+  }
 }
 .about-us-item {
   position: relative;
@@ -311,6 +362,12 @@ body {
   padding-top: 100px;
   padding-bottom: 90px;
 }
+@media (max-width: 768px) {
+  .our-menu {
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+}
 .our-menu-title {
   margin: 0;
   padding: 0;
@@ -318,6 +375,12 @@ body {
   text-transform: uppercase;
   text-align: left;
   padding-bottom: 100px;
+}
+@media (max-width: 768px) {
+  .our-menu-title {
+    text-align: center;
+    padding-bottom: 50px;
+  }
 }
 .our-menu-table {
   width: 100%;
@@ -364,6 +427,12 @@ sup {
   padding-bottom: 110px;
   background-color: #ffcb78;
 }
+@media (max-width: 768px) {
+  .order-form {
+    padding-top: 42.5px;
+    padding-bottom: 55px;
+  }
+}
 .order-form-title {
   margin: 0;
   padding: 0;
@@ -371,6 +440,12 @@ sup {
   text-transform: uppercase;
   text-align: left;
   padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .order-form-title {
+    text-align: center;
+    padding-bottom: 40px;
+  }
 }
 .order-form-text {
   display: block;
@@ -442,6 +517,12 @@ sup {
   background-color: black;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .nav-menu-footer {
   margin-right: 100px;
@@ -515,6 +596,26 @@ sup {
   }
 }
 @media (max-width: 768px) {
+  .container-1 {
+    width: 90vw;
+  }
+  .special-offer-container {
+    flex-direction: column;
+  }
+  .special-offer-item {
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+  }
+  .special-offer-item:last-child {
+    margin-bottom: 0;
+  }
+  .special-offer-item-description {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+  }
   .promo-container {
     flex-direction: column;
     justify-content: start;
@@ -538,5 +639,27 @@ sup {
   .promo-item::before {
     margin-left: auto;
     margin-right: auto;
+  }
+  .hisory-header {
+    padding-bottom: 60px;
+  }
+  .history-dl {
+    text-align: center;
+  }
+  .history-dl dt {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .history-dl dt i {
+    display: block;
+    float: none;
+    margin-top: 10px;
+  }
+  .history-dl dd img {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .history-dl dd p {
+    width: 100%;
   }
 }
